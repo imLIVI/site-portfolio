@@ -61,6 +61,7 @@ body {
   font-size: 88px;
   line-height: 96px;
   font-weight: 400;
+  
 }
 
 .hero-image p {
@@ -111,11 +112,11 @@ body {
 }
 
 .skill-html {
-  background-image: url("img/icon-html.svg");
+  background-image: url("./img/icon-html.svg");
 }
 
 .skill-css {
-  background-image: url("img/icon-css.svg");
+  background-image: url("./img/icon-css.svg");
 }
 
 .level {
