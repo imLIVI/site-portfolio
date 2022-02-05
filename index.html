@@ -1,77 +1,120 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Портфолио Junior верстальщика</title>
-  </head>
+<html lang="en">
+    <head>
+        <!-- Create: 
+            - encoding;
+            - site's description;
+            - site`s keywords;
 
-  <body>
+            -link to css file;
+
+            -title for browser header-->
+        <meta charset="utf-8">
+        <meta name="description" content="This site need to describe me and my skills in a programming site.">
+        <meta name="keywords" content="portfolio, programming, developer, html, css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Portfolio LIVI</title>
+        
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+        
+    </head>
     
-    <header class="page-header">
-        <div class="container">
-            <a class ="header-email" href="mailto:lesly1208@gmail.com">lesly1208@gmail.com </a>
-            <a class="header-phone" href="tel:+79818389898">+7(981)-838-98-98</a>
-        </div>
-    </header>
-    
-    
-
-    <section class="hero-image">
-        <div class="container">
-          <h1 class="heading">I`m LIVI</h1>
-          <p>Junior верстальщик</p>
-        </div>
-    </section>
-
-    <section class="intro">
-        <div class="container">
-          <h2 class="subheading">Давайте познакомимся</h2>
-            <figure class="user-image">
-                <img src="files/user.jpg" art="User`s photo" width="auto" height="536">
-            </figure>
-            <div>
-                <h3>Пара слов о себе</h3>
-                <p>Привет! Меня зовут Вика. Мне 23 года и я обучаюсь верстке. </p>
+    <body>
+        
+        <div class = "header-page">
+            <div class="navbar-links">
+                <a href="#intro">About</a>
+                <a href="#works">Works</a>  
+                <a href="#footer-contacts-links">Contacts</a>
             </div>
-            <div>
-                <h3>Чем могу быть полезен</h3>
-                <p>Текст о том, чем могу быть полезен.</p>
-            </div>
-          
-            <div class="skills">
-              <h3>Мои навыки</h3>
-              <dl class="skills-list">
-                <dt class="skill-html">HTML</dt>
-                <dd class="level"><div style="width: 60%;">60%</div></dd>
-                <dt class="skill-css">CSS</dt>
-                <dd class="level"><div style="width: 40%;">40%</div></dd>
-              </dl>
-            </div>
+            <div class="contacts-links">
+                <a class = "mail-link" href="mailto:lesly120898@gmail.com">lesly120898@gmail.com</a>
+                <a class = "phone-link" href="tel:+79818389897">+7 (981) 838-98-97</a>
+            </div>   
         </div>
-    </section>
-
-    <section class="portfolio">
-        <div class="container">
-          <h2 class="subheading">Мои работы</h2>
-            <figure class="project-image">
-                <img src="files/project.jpg" alt="My work" width="928" height="536">
-            </figure>
+        
+        <main>
             
-          <h3>Магазин товаров для дома</h3>
-          <p>Мой первый сайт.</p>
-            <a class="button" href="source/project/index.html">Открыть страницу</a>
-          <h3>Блог начинающего верстальщика</h3>
-          <p>Статический блог про обучение HTML и CSS.</p>
-        </div>
-    </section>
+            <!-- I`m LIVI Junior верстальщик -->
+            <section class = "hero-image">
+                <div class = "container">
+                    <h1 class = "heading">I`m LIVI</h1>
+                    <p>Junior верстальщик</p>
+                </div>
+            </section>
+            
+            <!-- Информация обо мне -->
+            <section class="intro" id="intro">
+                <div class="container">
+                    <h2 class="subheading">Давайте познакомимся</h2>
+                    
+                    <figure class="user-image">
+                        <img src="files/user.jpg" alt = "User`s photo" style="width: 350px; height: auto; border-radius: 50%;"> 
+                    </figure>
+                    
+                </div>
+                
+                <div>                 
+                    <h3>Пара слов обо мне</h3>
+                    <p>Привет! Меня зовут Липатникова Виктория. Мне 23 года и я обучаюсь верстке.</p>  
+                </div>
+                
+                <div>                 
+                    <h3>Чем могу быть полезна</h3>
+                    <p>Текст о том, чем могу быть полезна.</p>  
+                </div>  
+                    <h3>Мои навыки</h3>
+                    <dl class = "skills-list">
+                        <dt class = "skill-html">HTML</dt>
+                        <dd class = "level"><div style="width:70%;">70%</div></dd>
+                        <dt class="skill-css">CSS</dt>
+                        <dd class="level"><div style="width: 60%;">60%</div></dd>
+                    </dl>
+                <div class = "skills">                 
+                         
+                </div>  
+            </section>
+            
+            <section class = "works" id = "works">
 
-    <footer class="page-footer">
-        <div class="container">
-            <a class = "footer-email" href="mailto:lesly1208@gmail.com">lesly1208@gmail.com</a>
-            <a class = "footer-phone" href="tel:+79818389898">+7(981)-838-98-98</a>
-        </div>
-    </footer>
-  </body>
+                <h2> Мои работы</h2>
+                <div class="grid-works">
+                    <div class="work-one">
+                        One
+                    </div>
+                    <div class="work-two">
+    
+                    </div>
+                    <div class="work-three">
+    
+                    </div> 
+                    <div class="work-four">
+                    </div>
+                    <div class="work-five">
+    
+                    </div>
+                    <div class="work-six">
+    
+                    </div>  
+                    
+                </div>
+               
+                
+                
+            </section>
+            
+        </main>
+        
+        <footer class="page-footer">
+            <div class="footer-contacts-links" id="footer-contacts-links">
+                <a class = "email-link-footer" href="mailto:lesly120898@gmail.com">lesly120898@gmail.com</a>
+                <a class="phone-link-footer" href="tel:+79818389897">+7 (981) 838-98-97</a>
+            </div>
+            
+        </footer>
+    </body>
 </html>
