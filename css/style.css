@@ -120,9 +120,24 @@ body{
     column-gap: 10px;
     row-gap: 10px;
 }
+/*.grid-works a:hover{
+    outline: none;
+    box-shadow: 0 0 5px 1.5px rgb(9, 65, 53);
+}*/
 .work-one{
-    background-color: #5694ca;
+    background-color: white;
+    position: relative;  
+    border-radius: 20px;
 }
+.work-one img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .work-two{
     background-color: blue;
 }
