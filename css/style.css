@@ -40,9 +40,83 @@ a.resume-link{
     border-radius: 5px;
     margin-left: 15px;
 }
-a:hover {
+.navbar-links-container a:hover {
     color: var(--green);
 }
+/*contact information*/
+.social-network {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+}
+.social-network ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-network li {
+    padding: 10px;
+}
+.social-network::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+img.github-link:hover {
+    background: url(/img/icon-github-hover.png); 
+    width: 30px;
+    transform: scale(1.05);
+}
+img.telegram-link:hover {
+    background: url(/img/icon-telegram-hover.png); 
+    width: 30px;
+    transform: scale(1.05);
+}
+img.vk-link:hover {
+    background: url(/img/icon-vkontacte-hover.png); 
+    width: 30px;
+    transform: scale(1.05);
+}
+.email-link{ 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.email-link a{
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    color: var(--light-slate);
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    padding: 10px;
+
+}
+.email-link::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+.email-link a:hover {
+    color: var(--green);
+    transform: scale(1.05);
+}
+
 /*section intro*/
 .main-class {
     margin: 0;
@@ -53,12 +127,12 @@ a:hover {
     height: 100vh;
 }
 .hello-container {
-    position: relative;
+    /*position: relative;*/
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 100px;
+
 }
 .hello-container .hello-paragraph {
     font-size: 16px;
@@ -236,6 +310,7 @@ a:hover {
     --lightest-slate: #ccd6f6;
     --green: #64ffda;
     --slate: #8892b0;
+    --fz-xxs: 12px;
 
     --dark-navy: #020c1b;
     --light-navy: #112240;
@@ -249,7 +324,7 @@ a:hover {
     --blue: #57cbff;
     --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    --fz-xxs: 12px;
+    
     --fz-xs: 13px;
     --fz-sm: 14px;
     --fz-md: 16px;
