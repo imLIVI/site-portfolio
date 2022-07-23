@@ -1,7 +1,7 @@
 body{
     /*background-image: url("../img/hero-bg.jpg");*/
     background-color: var(--navy);
-    /*background-repeat: no-repeat;*/
+    margin: 0;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
@@ -9,6 +9,8 @@ body{
 .header
 {
     height: 100px;
+    width: 100%;
+    position: absolute;
 }
 .navbar-links-container {
     height: 100%;
@@ -17,7 +19,6 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-
 .main-links{
     height: 50%;
     display: flex;
@@ -34,7 +35,6 @@ body{
     text-align: center;
     padding: 15px;   
 }
-
 a.resume-link{
     border: 1px var(--green) solid;
     border-radius: 5px;
@@ -43,13 +43,47 @@ a.resume-link{
 a:hover {
     color: var(--green);
 }
-
+/*section intro*/
+.main-class {
+    margin: 0;
+    padding: 0 150px;
+    
+}
+.hero-image {
+    height: 100vh;
+}
+.hello-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+.hello-container .hello-paragraph {
+    font-size: 16px;
+    font-family: var(--font-mono);
+    color: var(--green);
+    margin: 0 0 10px 4px;
+}
+.hello-container h1 {
+    font-size: 70px;
+    font-family: var(--font-sans);
+    color: var(--lightest-slate);
+    margin: 0;
+}
+.hello-container .intro-information {
+    font-size: 16px;
+    font-family: var(--font-mono);
+    color: var(--slate);
+}
 .container{
+
     text-align: center;
 }
 
 /*main*/
-.heading{   
+/*.heading{   
     font-family: var(--font-sans);
     font-weight: 600;
     font-size: 88px;
@@ -78,10 +112,10 @@ a:hover {
 .intro p{
     font-size:18px;
     font-weight: 400;
-}
+}*/
 
 /*skills*/
-.skills-list{
+/*.skills-list{
     font-size:16px;
     
 }
@@ -110,10 +144,10 @@ a:hover {
   height: 12px;
   background-color: #288be6;
   border-radius: 6px;
-}
+}*/
 
 /*works*/
-.works{
+/*.works{
     margin: 0 auto;
     max-width: 1200px;  
     padding: 0 16px;
@@ -132,12 +166,12 @@ a:hover {
     grid-template-rows: repeat(3, 350px);
     column-gap: 10px;
     row-gap: 10px;
-}
+}*/
 /*.grid-works a:hover{
     outline: none;
     box-shadow: 0 0 5px 1.5px rgb(9, 65, 53);
 }*/
-.work-one{
+/*.work-one{
     background-color: white;
     position: relative;  
     border-radius: 20px;
@@ -173,9 +207,9 @@ a:hover {
 .page-footer{
     margin-top: 100px;
     background-color: #00417d;
-}
+}*/
 /*footer*/
-.footer-contacts-links{
+/*.footer-contacts-links{
     padding: 32px 0 32px;
     text-align: right;
     max-width: 1408px;
@@ -195,19 +229,19 @@ a:hover {
 .email-link-footer{
     background-image: url("../img/icon-email-footer.svg");
     background-repeat:no-repeat;
-}
+}*/
 
 :root{
     --navy: #0a192f;
     --lightest-slate: #ccd6f6;
     --green: #64ffda;
+    --slate: #8892b0;
 
     --dark-navy: #020c1b;
     --light-navy: #112240;
     --lightest-navy: #233554;
     --navy-shadow: rgba(2,12,27,0.7);
     --dark-slate: #495670;
-    --slate: #8892b0;
     --light-slate: #a8b2d1;
     --white: #e6f1ff;  
     --green-tint: rgba(100,255,218,0.1);
