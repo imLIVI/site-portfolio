@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">let`s get acquainted</h1>
+            <p id="description">
+                On the main page I told you about myself. And I want to know about you.
+            </p>
+        </header>
+        <main>
+            <div class="container">
+                <form  id="survey-form">
+                    <p>You are . . .</p>
+                    <div class="radio-class">     
+                        <div class="radio-row">
+                            <label>
+                                <input type="radio" name="whois" value="company">Company
+                            </label>
+                            <label>
+                                <input type="radio" name="whois" value="person">Person
+                            </label>
+                        </div>     
+                    </div>
+                    <div class="text-class">
+                        <div class="form-group">
+                            <!--Name
+                            TODO: add checklist (name/organization) that will be change form-->
+                            <label id="name-label" for="name">Name</label>
+                            <input id="name" type="text" placeholder="Enter your name/company name" required>
+                        </div>
+                        <div class="form-group">
+                            <!--Email-->
+                            <label id="email-label" for="email">Email</label>
+                            <input id="email" type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="number-label" for="number">Age <i style="font-size: 10px;">(optional)</i></label>
+                        <input id="number" type="number" placeholder="Age" min="4" max="100" pattern="[0-9]{3}">
+                        </div>
+                    </div>
+                    
+                    <!--Select-->
+                    <div class="form-group">
+                        <p>You want to . . . </p>
+                        <select id="dropdown" name="role" class="form-control" required>
+                            <option disabled selected value>Select current role</option>
+                            <option value="potentialfriend">Make friends with me</option>
+                            <option value = "invate">Invite to work</option>
+                            <option value = "check">Check the functionality of this form</option>
+                            <option value = "other">Other</option>
+                        </select>
+                    </div>
+                    
+                     <!--Radio-button-->
+                     <div class="form-group">
+                        <p>What skills are you interested in?</p>
+                        <div class="skills-class">
+                            <div class="skill-row">
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="html">HTML
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="css">CSS
+                                </label>
+                            </div>
+
+                            <div class="skill-row">
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="js">JS
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="git">Git
+                                </label>
+                            </div>
+
+                            <div class="skill-row">
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="linux">Linux
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="windows">Windows
+                                </label>
+                            </div>
+
+                            <div class="skill-row">
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="python">Python
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="skills" class="skill" value="cplusplus">C++
+                                </label>  
+                            </div>        
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <p>Write down what else interests you</p>
+                        <textarea id="comments" name="comment"  placeholder="Enter your comment here...">
+                        </textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                    
+                    
+                </form>
+
+                
+            </div>
+        </main>
+    </body>
+</html>
