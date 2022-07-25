@@ -1,32 +1,166 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 body{
     margin:0;
     padding: 0;
     width: 100%;
     height: auto;
 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Lato', sans-serif;
     font-size: 14px;
 }
 header{
     position:sticky;
-
-    height: 20px;  
-    background-color: aqua;
 }
-#header nav{
-    width: 50%;
 
-    text-align: right;
-    padding:25px 100px;     /*distats to links*/
-}
-nav a{
-    padding: 0 60px;        /*distats between links*/
-    
-    text-decoration: none;
-    color:black;
+/*----------For the title "Original Trombones"----------*/
+.logo{
+    padding-top: 20px;
+    width: 100%;
+
+    display:grid;
+    grid-template-columns: 60% repeat(3,1fr);
+
 }
 .logo img{
-    width: 300px;
+    width: 400px;
     height: auto;
     text-align: left;
+    padding-left: 15px;
+}
+
+/*----------For the links----------*/
+.nav-link{
+    padding-top:15px;     
+    
+}
+.nav-link a{
+    text-decoration: none;
+    color:black;
+    font-size: 22px;   
+}
+
+/*------------ Main part ------------*/
+main{
+    margin-top: 50px;
+    text-align:center;   
+}
+    /*------------ Email ------------*/
+#email{
+    width: 300px;
+    height: 25px;
+    padding:5px;
+}
+
+#submit{
+    width: 180px;
+    padding:5px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+
+    background-color: rgb(241, 210, 30);
+    border:1px solid rgb(241, 210, 30);
+    
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:18px; 
+}
+    /*------------ Features ------------*/
+.fire-class,
+.car-class,
+.accumulate-class{
+    width: 50%;
+    margin: 50px auto;
+    /*background-color: aquamarine;*/
+
+    display:grid;
+    grid-template-columns: 10% 90%;
+    
+}
+/*.col1{
+    background-color: red;
+}*/
+.col2{
+    /*background-color: blue;*/
+    text-align: left;
+    padding-left: 50px;
+}
+.col2 h2{  
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.col2 p{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+    /*------------ Video ------------*/
+iframe{
+    width: 600px;
+    height: 350px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+    /*------------ Pricing ------------*/
+.pricing-class{
+    width: 50%;
+    margin:50px auto;
+    
+
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    /*background-color: lawngreen;*/
+
+    font-size: 20px;
+}
+.pricing-class h4,
+.pricing-class button{
+    text-transform: uppercase;
+}
+.pricing-class h4{
+    background-color: rgba(141, 137, 137, 0.274);
+    margin: 0;
+    padding-top: 12px;
+    height: 40px;
+}
+.pricing-class ol{
+    padding: 0;
+}
+.pricing-class li{
+    list-style-type: none;
+    line-height: 30px;
+}
+.frame{
+    border:2px solid black;
+    margin: 20px;
+}
+button{
+    width: 120px;
+    padding:10px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    background-color: rgb(241, 210, 30);
+    border:1px solid rgb(241, 210, 30);
+
+    font-size:20px; 
+}
+/*------------ Footer ------------*/
+.footer-class{
+    background-color: rgba(128, 128, 128, 0.226);
+    width: 47%;
+    margin: 0 auto;
+    padding:20px;
+
+    font-size: 18px;
+    text-align: right;
+}
+.footer-class a{
+    text-decoration: none;
+    color:black;
+    padding:0 20px;
+}
+.footer-class p{
+    color:rgb(90, 88, 88);
 }
