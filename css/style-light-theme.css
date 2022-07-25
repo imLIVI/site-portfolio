@@ -146,6 +146,12 @@ img.vk-link:hover {
     align-items: center;
     margin: 20px 80px;
 }
+.scroll-to-top a {
+    text-decoration: none;
+}
+.scroll-to-top a:hover {
+    transform: scale(1.05);
+}
 /*section intro*/
 .main-class {
     margin: 0;
