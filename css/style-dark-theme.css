@@ -1,5 +1,4 @@
 body{
-    /*background-image: url("../img/hero-bg.jpg");*/
     background-color: var(--navy);
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -18,11 +17,32 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.header-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+button {
+    background-color: var(--navy);
+    border: 1px var(--green) solid;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+}
+.theme-button {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
 .main-links{
     height: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
 }
 .main-links a, a.resume-link{  
     font-family: var(--font-mono);
@@ -41,6 +61,7 @@ a.resume-link{
 .navbar-links-container a:hover {
     color: var(--green);
 }
+
 /*contact information*/
 .social-network {
     position: fixed;
@@ -190,18 +211,22 @@ h2 {
     color: var(--green);
 }
 .about-text ul{
-    padding: 0;
+    padding: 0 16px;
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     grid-column-gap: 0 10px;
 }
 .about-text li {
-    list-style-type: none;
+    color: var(--green);
+    font-size: var(--fz-m);
+    font-family: var(--font-mono);
+}
+.about-text li span {
+    color: var(--slate);
     font-size: var(--fz-m);
     font-family: var(--font-mono);
 }
 .about-text li:before {
-    content: url(/img/icon-marker_8px.png);
     padding-right: 10px;
 }
 .about-photo {
