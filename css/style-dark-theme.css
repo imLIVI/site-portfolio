@@ -27,7 +27,7 @@ html {
     position: relative;
     width: 100%;
 }
-button {
+button#theme {
     background-color: var(--navy);
     border: 1px var(--green) solid;
     border-radius: 5px;
@@ -137,7 +137,16 @@ img.vk-link:hover {
     color: var(--green);
     transform: scale(1.05);
 }
-
+/*Scroll to top*/
+.scroll-to-top{ 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 80px;
+}
 /*section intro*/
 .main-class {
     margin: 0;
