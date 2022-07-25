@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Create: 
-            - encoding;
-            - site's description;
-            - site`s keywords;
-
-            -link to css file;
-
-            -title for browser header-->
         <meta charset="utf-8">
         <meta name="description" content="This site need to describe me and my skills in a programming site.">
         <meta name="keywords" content="portfolio, programming, developer, html, css">
         
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-dark-theme.css" id="style-theme">
         
         <title>Portfolio LIVI</title>
-        <link rel="icon" href="img/favicon.ico">
-
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-        
+        <link rel="icon" href="img/favicon.ico">      
     </head>
     
     <body>
@@ -28,12 +16,20 @@
         <!-- Header -->
         <div class = "header">
             <div class="navbar-links-container">
-                <nav class="main-links">
-                    <a class="header-link" href="#intro">About</a>
-                    <a class="header-link" href="#projects">Projects</a>  
-                    <a class="header-link" href="#get-in-touch">Contacts</a>
-                    <a class="resume-link" href="/files/CV_English.pdf">Resume</a>      
+                <nav class="header-links">
+                    <div class="theme-button">
+                        <button id="theme">
+                            <img id="img-theme" src="/img/icon-dark-theme-moon.png" width="20px" height="20px";>
+                        </button>
+                    </div>
+                    <div class="main-links">
+                        <a class="header-link" href="#intro">About</a>
+                        <a class="header-link" href="#projects">Projects</a>  
+                        <a class="header-link" href="#get-in-touch">Contacts</a> 
+                        <a class="resume-link" href="/files/CV_English.pdf">Resume</a> 
+                    </div>
                 </nav>
+                
             </div>
         </div>
 
@@ -87,10 +83,11 @@
                             <p>Now I`m interested in Java development and want to work in IT.</p>
                             <p>Here are a few technologies I’ve been working with recently:</p>
                             <ul>
-                                <li>Java</li>
-                                <li>HTML & CSS</li>
-                                <li>SQL</li>
-                                <li>Git</li>
+                                <li><span>Java</span></li>
+                                <li><span>HTML & CSS</span></li>
+                                <li><span>SQL</span></li>
+                                <li><span>Git</span></li>
+                                
                             </ul>
                         </div>
                         <div class="about-photo">
@@ -98,8 +95,7 @@
                                 <img src="img/ViktoriaLipatnikova.png" alt = "User`s photo"> 
                             </figure>
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </section>
 
@@ -203,12 +199,8 @@
                     <a class="say-hello" href="mailto:lesly120898@gmail.com">Say Hello</a>
                 </div>
             </section>
-
         </main>
         
-        <footer class="page-footer">
-            
-            
-        </footer>
+        <script src="script.js"></script>  
     </body>
 </html>
