@@ -7,10 +7,10 @@ switchMode.onclick = function () {
 
     if (theme.getAttribute("href") == "css/style-light-theme.css") {
         theme.href = "css/style-dark-theme.css";
-        imgTheme.src = "https://github.com/imLIVI/site-portfolio/blob/main/img/icon-dark-theme-moon.png";
+        imgTheme.src = "/blob/main/img/icon-dark-theme-moon.png";
         
     } else {
         theme.href = "css/style-light-theme.css";
-        imgTheme.src = "https://github.com/imLIVI/site-portfolio/blob/main/img/icon-light-theme-sun.png";
+        imgTheme.src = "/blob/main/img/icon-light-theme-sun.png";
     }
 }
