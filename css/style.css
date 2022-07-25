@@ -124,7 +124,6 @@ img.vk-link:hover {
     height: 100vh;
 }
 .hello-container {
-    /*position: relative;*/
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -361,6 +360,7 @@ all about h2 in about-header*/
 .container-get-in-touch {
     max-width: 600px;
     margin: 0 auto 100px;
+    padding: 50px 0;
     text-align: center;
 }
 .get-in-touch {
@@ -418,20 +418,16 @@ p.p-get-in-touch {
     --fz-heading: 32px;
     --fz-h1: 50px;
     --fz-xxl: 80px;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 
-    --dark-navy: #020c1b;
-    
-    --navy-shadow: rgba(2,12,27,0.7); 
-    
+    --dark-navy: #020c1b;  
+    --navy-shadow: rgba(2,12,27,0.7);     
     --white: #e6f1ff;  
     --green-tint: rgba(100,255,218,0.1);
     --pink: #f57dff;
-    --blue: #57cbff;
-    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-       
-    --fz-lg: 18px; 
-    
+    --blue: #57cbff;     
+    --fz-lg: 18px;   
     --border-radius: 4px;
     --nav-height: 100px;
     --nav-scroll-height: 70px;
