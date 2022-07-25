@@ -24,8 +24,7 @@ body{
     flex-direction: row;
     justify-content: flex-end;
 }
-.main-links a, a.resume-link{
-    
+.main-links a, a.resume-link{  
     font-family: var(--font-mono);
     text-decoration: none;
     color: var(--lightest-slate);  
@@ -101,7 +100,6 @@ img.vk-link:hover {
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
     padding: 10px;
-
 }
 .email-link::after {
     content: "";
@@ -359,6 +357,50 @@ all about h2 in about-header*/
     align-self: center;
     z-index: 1;
   }
+/*Get in touch*/
+.container-get-in-touch {
+    max-width: 600px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+.get-in-touch {
+    padding: 100px 0px;   
+}
+.header-get-in-touch {
+    font-family: var(--font-mono);
+    color: var(--green);
+    margin: 10px 0 20px;
+}
+.get-in-touch h1 {
+    font-size: var(--fz-h1);
+    font-family: var(--font-sans);
+    color: var(--lightest-slate);
+    margin: 0px 0 20px;
+}
+p.p-get-in-touch {
+    font-size: var(--fz-xl);
+    font-family: var(--font-sans);
+    color: var(--slate);
+    margin: 0;
+}
+
+.say-hello-botton a{  
+    font-family: var(--font-mono);
+    text-decoration: none;
+    color: var(--lightest-slate);  
+    font-size: var(--fz-m); 
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;   
+}
+.say-hello-botton a{
+    border: 1px var(--green) solid;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.say-hello-botton a:hover {
+    color: var(--green);
+}
 :root{
     --navy: #0a192f; 
     --lightest-navy: #233554;
@@ -374,6 +416,7 @@ all about h2 in about-header*/
     --fz-xl: 20px;
     --fz-h3: 23px;
     --fz-heading: 32px;
+    --fz-h1: 50px;
     --fz-xxl: 80px;
 
     --dark-navy: #020c1b;
