@@ -8,11 +8,11 @@ switchMode.onclick = function () {
     if (theme.getAttribute("href") == "css/style-light-theme.css") {
         theme.href = "css/style-dark-theme.css";
         //for gitHub: https://github.com/imLIVI/site-portfolio/img/icon-dark-theme-moon.png
-        imgTheme.src = "https://github.com/imLIVI/site-portfolio/img/icon-dark-theme-moon.png";
+        imgTheme.src = "https://github.com/imLIVI/site-portfolio/blob/gh-pages/img/icon-dark-theme-moon.png?raw=true";
         
     } else {
         theme.href = "css/style-light-theme.css";
         //for gitHub: https://github.com/imLIVI/site-portfolio/img/icon-light-theme-sun.png
-        imgTheme.src = "https://github.com/imLIVI/site-portfolio/img/icon-light-theme-sun.png";
+        imgTheme.src = "https://github.com/imLIVI/site-portfolio/blob/gh-pages/img/icon-light-theme-sun.png?raw=true";
     }
 }
