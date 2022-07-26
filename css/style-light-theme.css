@@ -1,15 +1,15 @@
 img.github-link:hover {
-    background: url(/img/icon-github-hover-light.png); 
+    background: url(https://github.com/imLIVI/site-portfolio/blob/gh-pages/img/icon-github-hover-light.png?raw=true); 
     width: 30px;
     transform: scale(1.05);
 }
 img.telegram-link:hover {
-    background: url(/img/icon-telegram-hover-light.png); 
+    background: url(https://github.com/imLIVI/site-portfolio/blob/gh-pages/img/icon-telegram-hover-light.png?raw=true); 
     width: 30px;
     transform: scale(1.05);
 }
 img.vk-link:hover {
-    background: url(/img/icon-vkontacte-hover-light.png); 
+    background: url(https://github.com/imLIVI/site-portfolio/blob/gh-pages/img/icon-vkontacte-hover-light.png?raw=true); 
     width: 30px;
     transform: scale(1.05);
 }
