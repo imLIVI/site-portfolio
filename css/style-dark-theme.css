@@ -259,15 +259,17 @@ h2 {
     border-radius: 1.5%;
     -webkit-filter: grayscale(99%); 
     filter: grayscale(99%); 
+    -moz-transition: all var(--time-scale) ease-in-out;
+    -webkit-transition: all var(--time-scale) ease-in-out;
+    transition: all var(--time-scale) ease-in-out;
 }
 .about-photo img:hover{
-    position: relative;
+    /*position: relative;
     bottom: 1.5px;
-    right: 1.5px;
+    right: 1.5px;*/
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%); 
-    transition: 1s;
-    
+    transform: scale(1.02); 
 }
 /*----------projects----------
 all about h2 in about-header*/
@@ -327,14 +329,21 @@ all about h2 in about-header*/
     border-radius: 1.5%;
     -webkit-filter: grayscale(99%); 
     filter: grayscale(99%); 
+    -moz-transition: all var(--time-scale) ease-in-out;
+    -webkit-transition: all var(--time-scale) ease-in-out;
+    transition: all var(--time-scale) ease-in-out;
+}
+.img-project-left img:hover,
+.img-project-right img:hover {
+    transform: scale(1.02); 
 }
 .img-project-left a:hover,
 .img-project-right a:hover {
-    position: relative;
-    bottom: 3px;
+    /*position: relative;
+    bottom: 3px;*/
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%); 
-    transition: 1s;
+    /*transition: 1s;*/
 }
 .info-project h3,
 .info-project-right h3 {
@@ -463,6 +472,8 @@ p.p-get-in-touch {
     --fz-xxl: 80px;
     --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+    --time-scale: 0.5s;
 
     --dark-navy: #020c1b;  
     --navy-shadow: rgba(2,12,27,0.7);     
